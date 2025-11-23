@@ -13,10 +13,8 @@ Bot akan mengirim notifikasi ketika server **DOWN** atau **ONLINE kembali**.
 
 ```bash
 git clone https://github.com/USERNAME/vps-monitor.git
-cd vps-monitor
-
-cp .env.example .env
-nano .env
+cd vps-monitor chmod +x install.sh
+./install.sh 
 ```
 
 Isi datanya:
