@@ -1,0 +1,42 @@
+[
+  {
+    "id": "srv_id1",
+    "name": "SERVER ID 1",
+    "host": "neva-id.vpn-premium.xyz",
+    "port": 22,
+    "emoji": "🇮🇩",
+    "enabled": true
+  },
+  {
+    "id": "srv_id2",
+    "name": "SERVER ID 2",
+    "host": "160.19.167.115",
+    "port": 22,
+    "emoji": "🇮🇩",
+    "enabled": true
+  },
+  {
+    "id": "srv_sg1",
+    "name": "SERVER SG 1",
+    "host": "sg1.jmsvpn.tech",
+    "port": 22,
+    "emoji": "🇸🇬",
+    "enabled": true
+  },
+  {
+    "id": "srv_mi6i3qlu_wqy5",
+    "name": "SERVER SG 2",
+    "host": "sg2.jmsvpn.tech",
+    "port": 22,
+    "emoji": "🇸🇬",
+    "enabled": true
+  },
+  {
+    "id": "srv_mi89q1sn_hicx",
+    "name": "SERVER SG 3",
+    "host": "sg.serverdovip.my.id",
+    "port": 22,
+    "emoji": "🇸🇬",
+    "enabled": true
+  }
+]
