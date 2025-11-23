@@ -12,11 +12,13 @@ Bot akan mengirim notifikasi ketika server **DOWN** atau **ONLINE kembali**.
 ## 📦 Instalasi
 
 ```bash
-git clone https://github.com/USERNAME/vps-monitor.git
-cd vps-monitor chmod +x install.sh
-./install.sh 
+cd ~
+sudo apt update
+sudo apt install -y git
+git clone https://github.com/jmsstore/vps-monitor.git
+cd vps-monitor && chmod +x install.sh update.sh
+./install.sh
 ```
-
 Isi datanya:
 
 ```
@@ -26,15 +28,6 @@ NOTIFY_CHAT_ID=-1001234567890
 MONITORING_ENABLED=true
 MONITORING_INTERVAL=60
 ```
-
-Jalankan:
-
-```bash
-chmod +x install.sh
-./install.sh
-```
-
----
 
 ## 🔄 Update Bot
 
