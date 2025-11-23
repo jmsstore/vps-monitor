@@ -36,6 +36,14 @@ MONITORING_INTERVAL=60
 ```
 
 ---
+### Cek Bot Jalan
+```
+pm2 list
+```
+### Log Bot
+```
+pm2 logs vps-monitor
+```
 
 ## ✅ Requirements
 
