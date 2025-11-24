@@ -16,7 +16,7 @@ cd ~
 sudo apt update
 sudo apt install -y git
 git clone https://github.com/jmsstore/vps-monitor.git
-cd vps-monitor && nano .env && chmod +x install.sh update.sh
+cd vps-monitor && clear && nano .env && chmod +x install.sh update.sh
 ./install.sh
 ```
 Isi datanya:
@@ -53,6 +53,4 @@ pm2 logs vps-monitor
 
 ---
 
-## ⚠️ Jangan upload `.env`
-
-Repo sudah termasuk `.gitignore`
+## Powered by JMS STORE
