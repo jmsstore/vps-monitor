@@ -165,26 +165,6 @@ async function checkAllServersAndNotify() {
 
         const prev = lastStatuses[id];
 
-        // Hitung ping spike (kalau sebelumnya ada ping)
-        const prevPing = prev && typeof prev.lastMs === 'number' ? prev.lastMs : null;
-        if (prevPing != null) {
-          const diff = ms - prevPing;
-          if (diff > 120) {
-            const lastAlert = pingCooldown[id] || 0;
-            if (Date.now() - lastAlert > 180000) {
-              const spikeMsg =
-`━━━━━━━━━━━━━━━
-⚠️ *PING SPIKE TERDETEKSI*
-🖥 ${server.name} ${server.emoji || ''}
-📈 ${prevPing}ms → *${ms}ms*
-⏱ ${new Date().toLocaleString()}
-━━━━━━━━━━━━━━━`;
-              await sendNotification(spikeMsg);
-              pingCooldown[id] = Date.now();
-            }
-          }
-        }
-
         // Update status
         if (!prev) {
           lastStatuses[id] = {
