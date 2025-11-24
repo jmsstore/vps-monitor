@@ -16,7 +16,7 @@ cd ~
 sudo apt update
 sudo apt install -y git
 git clone https://github.com/jmsstore/vps-monitor.git
-cd vps-monitor && chmod +x install.sh update.sh
+cd vps-monitor && nano .env && chmod +x install.sh update.sh
 ./install.sh
 ```
 Isi datanya:
